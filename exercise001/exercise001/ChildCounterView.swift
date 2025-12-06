@@ -20,6 +20,7 @@ struct ChildCounterView: View {
                     .frame(width: 100.0, height: 100.0)
                     .tint(.green)
             }
+            .disabled(count >= 5)
             Button {
                 count -= 1
             } label: {
