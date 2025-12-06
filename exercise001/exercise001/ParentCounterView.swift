@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ParentCounterView: View {
+    @State var count = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 40.0) {
+            Text("\(count)")
+                .font(.largeTitle)
+            ChildCounterView(count: $count)
         }
-        .padding()
     }
 }
 
