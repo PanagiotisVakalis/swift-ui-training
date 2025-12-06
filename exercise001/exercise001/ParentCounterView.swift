@@ -14,11 +14,11 @@ struct ParentCounterView: View {
         VStack(spacing: 40.0) {
             Text("\(count)")
                 .font(.largeTitle)
+            ChildCounterView(count: $count)
             
-            if count < 5 {
-                ChildCounterView(count: $count)
-            } else {
+            if count >= 5 {
                 Text("Limit reached")
+                    .foregroundStyle(.red)
             }
         }
     }
