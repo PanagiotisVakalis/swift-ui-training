@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ParentCounterView: View {
-    @State var count = 0
+    @State private var count = 0
     
     var body: some View {
         VStack(spacing: 40.0) {
