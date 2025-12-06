@@ -11,7 +11,7 @@ import SwiftUI
 struct exercise001App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ParentCounterView()
         }
     }
 }
