@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ParentView.swift
 //  exercise002
 //
 //  Created by Panagiotis Vakalis on 9/12/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ParentView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +20,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ParentView()
 }
