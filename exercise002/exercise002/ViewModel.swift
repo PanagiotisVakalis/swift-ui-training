@@ -10,7 +10,7 @@ import Combine
 
 final class ViewModel: ObservableObject {
     @MainActor @Published var items: [String] = []
-    @Published var selectedItem: String? = nil
+    @Published var selectedItem: String = ""
     
     func loadItems() async {
         try? await Task.sleep(for: .seconds(2))
