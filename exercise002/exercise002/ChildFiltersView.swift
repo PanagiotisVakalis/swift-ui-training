@@ -1,5 +1,5 @@
 //
-//  ChildFilterView.swift
+//  ChildFiltersView.swift
 //  exercise002
 //
 //  Created by Panagiotis Vakalis on 9/12/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ChildFilterView: View {
+struct ChildFiltersView: View {
     @Binding var selectedFilter: String
     
     var body: some View {
@@ -33,5 +33,5 @@ struct ChildFilterView: View {
 
 #Preview {
     @Previewable @State var selectedFilter = ""
-    return ChildFilterView(selectedFilter: $selectedFilter)
+    return ChildFiltersView(selectedFilter: $selectedFilter)
 }

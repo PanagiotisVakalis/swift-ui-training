@@ -14,7 +14,7 @@ struct ParentView: View {
     var body: some View {
         VStack {
             Toggle(isExpanded ? "Collapse" : "Expand", isOn: $isExpanded)
-            ChildFilterView(selectedFilter: $viewModel.selectedItem)
+            ChildFiltersView(selectedFilter: $viewModel.selectedItem)
             ChildContentView(viewModel: viewModel)
         }
         .padding()
