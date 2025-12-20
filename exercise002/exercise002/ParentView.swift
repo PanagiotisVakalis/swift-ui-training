@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ParentView: View {
+    @StateObject var viewModel = ViewModel()
+    @State var isExpanded = true
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Toggle(isExpanded ? "Collapse" : "Expand", isOn: $isExpanded)
+            ChildFilterView(selectedFilter: $viewModel.selectedItem)
+            ChildContentView(viewModel: viewModel)
         }
         .padding()
     }
